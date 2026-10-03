@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rules drawer harness</title>
+<!--
+  Loads the content script outside of Chrome's extension system so the drawer
+  can be tried quickly. Serve the repo root and open /dev/harness.html:
+    python3 -m http.server 8765
+-->
+<style>
+  body { margin: 0; font: 16px system-ui; background: #1b1f2a; color: #ddd; }
+  .fake { padding: 2em; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1em; }
+  .fake div { height: 140px; background: #2a3142; border-radius: 8px; padding: 1em; }
+  input { font: inherit; }
+</style>
+<script>
+  // Minimal stand-ins for the chrome.* APIs the content script uses.
+  const mem = {};
+  window.chrome = {
+    runtime: {
+      getURL: (p) => "../extension/" + p,
+      onMessage: { addListener: (fn) => (window.__toggle = () => fn({ type: "toggle" })) },
+    },
+    storage: {
+      local: {
+        get: async (k) => ({ [k]: JSON.parse(localStorage.getItem(k) || "null") ?? undefined }),
+        set: async (o) => Object.entries(o).forEach(([k, v]) => localStorage.setItem(k, JSON.stringify(v))),
+      },
+    },
+  };
+</script>
+</head>
+<body>
+  <h1 style="padding: 0 1em">Pretend TI Assistant</h1>
+  <p style="padding: 0 2em">Press <kbd>/</kbd> to open the rules drawer. A text field to check <kbd>/</kbd> is ignored while typing: <input placeholder="type here"></p>
+  <div class="fake"><div>Hacan</div><div>Sol</div><div>Letnev</div><div>Jol-Nar</div><div>Mentak</div><div>Xxcha</div></div>
+  <script src="../extension/content.js"></script>
+</body>
+</html>

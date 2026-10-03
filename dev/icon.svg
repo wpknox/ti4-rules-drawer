@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="26" fill="#141a2b"/>
+  <!-- hex system tile -->
+  <polygon points="64,14 107,39 107,89 64,114 21,89 21,39" fill="#1f2a48" stroke="#ffc53d" stroke-width="7" stroke-linejoin="round"/>
+  <!-- magnifier -->
+  <circle cx="58" cy="58" r="19" fill="none" stroke="#e7e9f0" stroke-width="8"/>
+  <line x1="72" y1="72" x2="88" y2="88" stroke="#e7e9f0" stroke-width="10" stroke-linecap="round"/>
+</svg>

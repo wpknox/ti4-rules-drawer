@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97793C0930708CAB0054C8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97793C0830708CAB0054C8EF /* AppDelegate.swift */; };
+		97793C0D30708CAB0054C8EF /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 97793C0B30708CAB0054C8EF /* Main.html */; };
+		97793C0F30708CAB0054C8EF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 97793C0E30708CAB0054C8EF /* Icon.png */; };
+		97793C1130708CAB0054C8EF /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 97793C1030708CAB0054C8EF /* Style.css */; };
+		97793C1330708CAB0054C8EF /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 97793C1230708CAB0054C8EF /* Script.js */; };
+		97793C1530708CAB0054C8EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97793C1430708CAB0054C8EF /* ViewController.swift */; };
+		97793C1830708CAB0054C8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97793C1630708CAB0054C8EF /* Main.storyboard */; };
+		97793C1A30708CAD0054C8EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97793C1930708CAD0054C8EF /* Assets.xcassets */; };
+		97793C2730708CAD0054C8EF /* TI4_Rules_DrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97793C2630708CAD0054C8EF /* TI4_Rules_DrawerTests.swift */; };
+		97793C3130708CAD0054C8EF /* TI4_Rules_DrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97793C3030708CAD0054C8EF /* TI4_Rules_DrawerUITests.swift */; };
+		97793C3330708CAD0054C8EF /* TI4_Rules_DrawerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97793C3230708CAD0054C8EF /* TI4_Rules_DrawerUITestsLaunchTests.swift */; };
+		97793C3930708CAD0054C8EF /* TI4 Rules Drawer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 97793C3830708CAD0054C8EF /* TI4 Rules Drawer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97793C3E30708CAD0054C8EF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97793C3D30708CAD0054C8EF /* SafariWebExtensionHandler.swift */; };
+		97793C5730708CAD0054C8EF /* drawer.css in Resources */ = {isa = PBXBuildFile; fileRef = 97793C5130708CAD0054C8EF /* drawer.css */; };
+		97793C5830708CAD0054C8EF /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 97793C5230708CAD0054C8EF /* background.js */; };
+		97793C5930708CAD0054C8EF /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 97793C5330708CAD0054C8EF /* icons */; };
+		97793C5A30708CAD0054C8EF /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 97793C5430708CAD0054C8EF /* rules.json */; };
+		97793C5B30708CAD0054C8EF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 97793C5530708CAD0054C8EF /* manifest.json */; };
+		97793C5C30708CAD0054C8EF /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 97793C5630708CAD0054C8EF /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97793C2330708CAD0054C8EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97793BFD30708CAB0054C8EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97793C0430708CAB0054C8EF;
+			remoteInfo = "TI4 Rules Drawer";
+		};
+		97793C2D30708CAD0054C8EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97793BFD30708CAB0054C8EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97793C0430708CAB0054C8EF;
+			remoteInfo = "TI4 Rules Drawer";
+		};
+		97793C3A30708CAD0054C8EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97793BFD30708CAB0054C8EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97793C3730708CAD0054C8EF;
+			remoteInfo = "TI4 Rules Drawer Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97793C4630708CAD0054C8EF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97793C3930708CAD0054C8EF /* TI4 Rules Drawer Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97793C0530708CAB0054C8EF /* TI4 Rules Drawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TI4 Rules Drawer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97793C0830708CAB0054C8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97793C0C30708CAB0054C8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		97793C0E30708CAB0054C8EF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		97793C1030708CAB0054C8EF /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		97793C1230708CAB0054C8EF /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		97793C1430708CAB0054C8EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97793C1730708CAB0054C8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97793C1930708CAD0054C8EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97793C1B30708CAD0054C8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97793C1C30708CAD0054C8EF /* TI4_Rules_Drawer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TI4_Rules_Drawer.entitlements; sourceTree = "<group>"; };
+		97793C1D30708CAD0054C8EF /* TI4 Rules Drawer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TI4 Rules Drawer.entitlements"; sourceTree = "<group>"; };
+		97793C2230708CAD0054C8EF /* TI4 Rules DrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TI4 Rules DrawerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97793C2630708CAD0054C8EF /* TI4_Rules_DrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TI4_Rules_DrawerTests.swift; sourceTree = "<group>"; };
+		97793C2C30708CAD0054C8EF /* TI4 Rules DrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TI4 Rules DrawerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97793C3030708CAD0054C8EF /* TI4_Rules_DrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TI4_Rules_DrawerUITests.swift; sourceTree = "<group>"; };
+		97793C3230708CAD0054C8EF /* TI4_Rules_DrawerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TI4_Rules_DrawerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97793C3830708CAD0054C8EF /* TI4 Rules Drawer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TI4 Rules Drawer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97793C3D30708CAD0054C8EF /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		97793C3F30708CAD0054C8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97793C4030708CAD0054C8EF /* TI4_Rules_Drawer_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TI4_Rules_Drawer_Extension.entitlements; sourceTree = "<group>"; };
+		97793C5130708CAD0054C8EF /* drawer.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = drawer.css; path = ../../../extension/drawer.css; sourceTree = "<group>"; };
+		97793C5230708CAD0054C8EF /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		97793C5330708CAD0054C8EF /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../extension/icons; sourceTree = "<group>"; };
+		97793C5430708CAD0054C8EF /* rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = rules.json; path = ../../../extension/rules.json; sourceTree = "<group>"; };
+		97793C5530708CAD0054C8EF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		97793C5630708CAD0054C8EF /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../../extension/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97793C0230708CAB0054C8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C1F30708CAD0054C8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C2930708CAD0054C8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C3530708CAD0054C8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97793BFC30708CAB0054C8EF = {
+			isa = PBXGroup;
+			children = (
+				97793C0730708CAB0054C8EF /* TI4 Rules Drawer */,
+				97793C2530708CAD0054C8EF /* TI4 Rules DrawerTests */,
+				97793C2F30708CAD0054C8EF /* TI4 Rules DrawerUITests */,
+				97793C3C30708CAD0054C8EF /* TI4 Rules Drawer Extension */,
+				97793C0630708CAB0054C8EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97793C0630708CAB0054C8EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97793C0530708CAB0054C8EF /* TI4 Rules Drawer.app */,
+				97793C2230708CAD0054C8EF /* TI4 Rules DrawerTests.xctest */,
+				97793C2C30708CAD0054C8EF /* TI4 Rules DrawerUITests.xctest */,
+				97793C3830708CAD0054C8EF /* TI4 Rules Drawer Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97793C0730708CAB0054C8EF /* TI4 Rules Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				97793C0830708CAB0054C8EF /* AppDelegate.swift */,
+				97793C1430708CAB0054C8EF /* ViewController.swift */,
+				97793C1630708CAB0054C8EF /* Main.storyboard */,
+				97793C1930708CAD0054C8EF /* Assets.xcassets */,
+				97793C1B30708CAD0054C8EF /* Info.plist */,
+				97793C1C30708CAD0054C8EF /* TI4_Rules_Drawer.entitlements */,
+				97793C1D30708CAD0054C8EF /* TI4 Rules Drawer.entitlements */,
+				97793C0A30708CAB0054C8EF /* Resources */,
+			);
+			path = "TI4 Rules Drawer";
+			sourceTree = "<group>";
+		};
+		97793C0A30708CAB0054C8EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97793C0B30708CAB0054C8EF /* Main.html */,
+				97793C0E30708CAB0054C8EF /* Icon.png */,
+				97793C1030708CAB0054C8EF /* Style.css */,
+				97793C1230708CAB0054C8EF /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97793C2530708CAD0054C8EF /* TI4 Rules DrawerTests */ = {
+			isa = PBXGroup;
+			children = (
+				97793C2630708CAD0054C8EF /* TI4_Rules_DrawerTests.swift */,
+			);
+			path = "TI4 Rules DrawerTests";
+			sourceTree = "<group>";
+		};
+		97793C2F30708CAD0054C8EF /* TI4 Rules DrawerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97793C3030708CAD0054C8EF /* TI4_Rules_DrawerUITests.swift */,
+				97793C3230708CAD0054C8EF /* TI4_Rules_DrawerUITestsLaunchTests.swift */,
+			);
+			path = "TI4 Rules DrawerUITests";
+			sourceTree = "<group>";
+		};
+		97793C3C30708CAD0054C8EF /* TI4 Rules Drawer Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97793C5030708CAD0054C8EF /* Resources */,
+				97793C3D30708CAD0054C8EF /* SafariWebExtensionHandler.swift */,
+				97793C3F30708CAD0054C8EF /* Info.plist */,
+				97793C4030708CAD0054C8EF /* TI4_Rules_Drawer_Extension.entitlements */,
+			);
+			path = "TI4 Rules Drawer Extension";
+			sourceTree = "<group>";
+		};
+		97793C5030708CAD0054C8EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97793C5130708CAD0054C8EF /* drawer.css */,
+				97793C5230708CAD0054C8EF /* background.js */,
+				97793C5330708CAD0054C8EF /* icons */,
+				97793C5430708CAD0054C8EF /* rules.json */,
+				97793C5530708CAD0054C8EF /* manifest.json */,
+				97793C5630708CAD0054C8EF /* content.js */,
+			);
+			name = Resources;
+			path = "TI4 Rules Drawer Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97793C0430708CAB0054C8EF /* TI4 Rules Drawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97793C4730708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules Drawer" */;
+			buildPhases = (
+				97793C0130708CAB0054C8EF /* Sources */,
+				97793C0230708CAB0054C8EF /* Frameworks */,
+				97793C0330708CAB0054C8EF /* Resources */,
+				97793C4630708CAD0054C8EF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97793C3B30708CAD0054C8EF /* PBXTargetDependency */,
+			);
+			name = "TI4 Rules Drawer";
+			packageProductDependencies = (
+			);
+			productName = "TI4 Rules Drawer";
+			productReference = 97793C0530708CAB0054C8EF /* TI4 Rules Drawer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97793C2130708CAD0054C8EF /* TI4 Rules DrawerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97793C4A30708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules DrawerTests" */;
+			buildPhases = (
+				97793C1E30708CAD0054C8EF /* Sources */,
+				97793C1F30708CAD0054C8EF /* Frameworks */,
+				97793C2030708CAD0054C8EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97793C2430708CAD0054C8EF /* PBXTargetDependency */,
+			);
+			name = "TI4 Rules DrawerTests";
+			packageProductDependencies = (
+			);
+			productName = "TI4 Rules DrawerTests";
+			productReference = 97793C2230708CAD0054C8EF /* TI4 Rules DrawerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97793C2B30708CAD0054C8EF /* TI4 Rules DrawerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97793C4D30708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules DrawerUITests" */;
+			buildPhases = (
+				97793C2830708CAD0054C8EF /* Sources */,
+				97793C2930708CAD0054C8EF /* Frameworks */,
+				97793C2A30708CAD0054C8EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97793C2E30708CAD0054C8EF /* PBXTargetDependency */,
+			);
+			name = "TI4 Rules DrawerUITests";
+			packageProductDependencies = (
+			);
+			productName = "TI4 Rules DrawerUITests";
+			productReference = 97793C2C30708CAD0054C8EF /* TI4 Rules DrawerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		97793C3730708CAD0054C8EF /* TI4 Rules Drawer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97793C4330708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules Drawer Extension" */;
+			buildPhases = (
+				97793C3430708CAD0054C8EF /* Sources */,
+				97793C3530708CAD0054C8EF /* Frameworks */,
+				97793C3630708CAD0054C8EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TI4 Rules Drawer Extension";
+			packageProductDependencies = (
+			);
+			productName = "TI4 Rules Drawer Extension";
+			productReference = 97793C3830708CAD0054C8EF /* TI4 Rules Drawer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97793BFD30708CAB0054C8EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					97793C0430708CAB0054C8EF = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					97793C2130708CAD0054C8EF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 97793C0430708CAB0054C8EF;
+					};
+					97793C2B30708CAD0054C8EF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 97793C0430708CAB0054C8EF;
+					};
+					97793C3730708CAD0054C8EF = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 97793C0030708CAB0054C8EF /* Build configuration list for PBXProject "TI4 Rules Drawer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97793BFC30708CAB0054C8EF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 97793C0630708CAB0054C8EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97793C0430708CAB0054C8EF /* TI4 Rules Drawer */,
+				97793C2130708CAD0054C8EF /* TI4 Rules DrawerTests */,
+				97793C2B30708CAD0054C8EF /* TI4 Rules DrawerUITests */,
+				97793C3730708CAD0054C8EF /* TI4 Rules Drawer Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97793C0330708CAB0054C8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97793C0F30708CAB0054C8EF /* Icon.png in Resources */,
+				97793C1830708CAB0054C8EF /* Main.storyboard in Resources */,
+				97793C1330708CAB0054C8EF /* Script.js in Resources */,
+				97793C0D30708CAB0054C8EF /* Main.html in Resources */,
+				97793C1A30708CAD0054C8EF /* Assets.xcassets in Resources */,
+				97793C1130708CAB0054C8EF /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C2030708CAD0054C8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C2A30708CAD0054C8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C3630708CAD0054C8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97793C5C30708CAD0054C8EF /* content.js in Resources */,
+				97793C5930708CAD0054C8EF /* icons in Resources */,
+				97793C5A30708CAD0054C8EF /* rules.json in Resources */,
+				97793C5B30708CAD0054C8EF /* manifest.json in Resources */,
+				97793C5830708CAD0054C8EF /* background.js in Resources */,
+				97793C5730708CAD0054C8EF /* drawer.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97793C0130708CAB0054C8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97793C1530708CAB0054C8EF /* ViewController.swift in Sources */,
+				97793C0930708CAB0054C8EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C1E30708CAD0054C8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97793C2730708CAD0054C8EF /* TI4_Rules_DrawerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C2830708CAD0054C8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97793C3130708CAD0054C8EF /* TI4_Rules_DrawerUITests.swift in Sources */,
+				97793C3330708CAD0054C8EF /* TI4_Rules_DrawerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97793C3430708CAD0054C8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97793C3E30708CAD0054C8EF /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97793C2430708CAD0054C8EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97793C0430708CAB0054C8EF /* TI4 Rules Drawer */;
+			targetProxy = 97793C2330708CAD0054C8EF /* PBXContainerItemProxy */;
+		};
+		97793C2E30708CAD0054C8EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97793C0430708CAB0054C8EF /* TI4 Rules Drawer */;
+			targetProxy = 97793C2D30708CAD0054C8EF /* PBXContainerItemProxy */;
+		};
+		97793C3B30708CAD0054C8EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97793C3730708CAD0054C8EF /* TI4 Rules Drawer Extension */;
+			targetProxy = 97793C3A30708CAD0054C8EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97793C0B30708CAB0054C8EF /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97793C0C30708CAB0054C8EF /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		97793C1630708CAB0054C8EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97793C1730708CAB0054C8EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97793C4130708CAD0054C8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97793C4230708CAD0054C8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		97793C4430708CAD0054C8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TI4 Rules Drawer Extension/TI4_Rules_Drawer_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TI4 Rules Drawer Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TI4 Rules Drawer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-Drawer.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97793C4530708CAD0054C8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TI4 Rules Drawer Extension/TI4_Rules_Drawer_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TI4 Rules Drawer Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TI4 Rules Drawer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-Drawer.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		97793C4830708CAD0054C8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TI4 Rules Drawer/TI4 Rules Drawer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TI4 Rules Drawer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TI4 Rules Drawer";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-Drawer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97793C4930708CAD0054C8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TI4 Rules Drawer/TI4 Rules Drawer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TI4 Rules Drawer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TI4 Rules Drawer";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-Drawer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		97793C4B30708CAD0054C8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-DrawerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TI4 Rules Drawer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TI4 Rules Drawer";
+			};
+			name = Debug;
+		};
+		97793C4C30708CAD0054C8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-DrawerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TI4 Rules Drawer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TI4 Rules Drawer";
+			};
+			name = Release;
+		};
+		97793C4E30708CAD0054C8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-DrawerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TI4 Rules Drawer";
+			};
+			name = Debug;
+		};
+		97793C4F30708CAD0054C8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wpknox.TI4-Rules-DrawerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TI4 Rules Drawer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97793C0030708CAB0054C8EF /* Build configuration list for PBXProject "TI4 Rules Drawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97793C4130708CAD0054C8EF /* Debug */,
+				97793C4230708CAD0054C8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97793C4330708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules Drawer Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97793C4430708CAD0054C8EF /* Debug */,
+				97793C4530708CAD0054C8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97793C4730708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules Drawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97793C4830708CAD0054C8EF /* Debug */,
+				97793C4930708CAD0054C8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97793C4A30708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules DrawerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97793C4B30708CAD0054C8EF /* Debug */,
+				97793C4C30708CAD0054C8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97793C4D30708CAD0054C8EF /* Build configuration list for PBXNativeTarget "TI4 Rules DrawerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97793C4E30708CAD0054C8EF /* Debug */,
+				97793C4F30708CAD0054C8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97793BFD30708CAB0054C8EF /* Project object */;
+}

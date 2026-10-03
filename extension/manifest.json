@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "TI4 Rules Drawer",
+  "version": "0.1.0",
+  "description": "Search the Twilight Imperium 4 rules reference in a slide-out drawer on TI Assistant.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle TI4 rules (press / on the page)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "commands": {
+    "toggle-drawer": {
+      "suggested_key": {
+        "default": "Alt+R",
+        "mac": "Alt+R"
+      },
+      "description": "Toggle the rules drawer"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ti-assistant.com/*",
+        "https://www.ti-assistant.com/*",
+        "https://dev.ti-assistant.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "rules.json",
+        "drawer.css"
+      ],
+      "matches": [
+        "https://ti-assistant.com/*",
+        "https://www.ti-assistant.com/*",
+        "https://dev.ti-assistant.com/*"
+      ]
+    }
+  ]
+}
