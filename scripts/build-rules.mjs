@@ -1,18 +1,56 @@
 // Bundles the tirules-search pages into extension/rules.json.
 // Usage: node scripts/build-rules.mjs [path/to/tirules-search]
 //
+// The rules folder is the first of: the path argument, $TIRULES_DIR, or a
+// tirules-search clone next to this repo. The credit link shown in the drawer
+// comes from that folder's git remote, so a different fork is credited correctly.
+//
 // Each R_/F_/C_ page in the rules repo is plain HTML wrapped in two PHP
 // include lines, so we strip those and keep the rest as-is. The extension
 // renders that HTML directly and builds its search index in the browser.
 
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { execSync } from "node:child_process";
 import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const SRC = resolve(process.argv[2] ?? join(ROOT, "../ti4-rules/tirules"));
+const SRC = resolve(
+  process.argv[2] ?? process.env.TIRULES_DIR ?? join(ROOT, "../tirules-search"),
+);
 const OUT = join(ROOT, "extension/rules.json");
+
+if (!existsSync(SRC) || !readdirSync(SRC).some((f) => /^R_\w+\.php$/.test(f))) {
+  console.error(
+    `No tirules-search pages found in ${SRC}\n\n` +
+      "Clone https://github.com/wpknox/tirules-search (or a fork), then either:\n" +
+      "  node scripts/build-rules.mjs path/to/tirules-search\n" +
+      "  TIRULES_DIR=path/to/tirules-search node scripts/build-rules.mjs\n" +
+      "or put the clone next to this repo as ../tirules-search.",
+  );
+  process.exit(1);
+}
+
+// Returns null when the folder isn't a git repo or git isn't installed.
+function git(args) {
+  try {
+    return execSync(`git ${args}`, { cwd: SRC, stdio: ["ignore", "pipe", "ignore"] })
+      .toString()
+      .trim();
+  } catch {
+    return null;
+  }
+}
+
+// git@github.com:owner/repo.git or https://github.com/owner/repo.git
+//   -> https://github.com/owner/repo
+function webUrl(remote) {
+  if (!remote) return null;
+  return remote
+    .replace(/^git@([^:]+):/, "https://$1/")
+    .replace(/^ssh:\/\/git@/, "https://")
+    .replace(/\.git$/, "");
+}
 
 const KINDS = { R: "Rules", F: "Factions", C: "Components" };
 
@@ -76,16 +114,13 @@ const pages = files
   .map(buildPage)
   .sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
 
-let commit = "unknown";
-try {
-  commit = execSync("git rev-parse --short HEAD", { cwd: SRC })
-    .toString()
-    .trim();
-} catch {}
+const commit = git("rev-parse --short HEAD") ?? "unknown";
+const repo =
+  webUrl(git("remote get-url origin")) ?? "https://github.com/wpknox/tirules-search";
 
 const data = {
   source: {
-    repo: "https://github.com/wpknox/tirules-search",
+    repo,
     commit,
     builtAt: new Date().toISOString(),
   },

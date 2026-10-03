@@ -52,9 +52,12 @@ After changing anything in `extension/`, re-run `scripts/build-safari.sh`, since
 The rules are a snapshot of a local clone of tirules-search. After pulling or editing the rules repo:
 
 ```bash
-node scripts/build-rules.mjs                 # defaults to ../ti4-rules/tirules
 node scripts/build-rules.mjs path/to/tirules-search
+TIRULES_DIR=path/to/tirules-search node scripts/build-rules.mjs   # or set it once in your shell profile
+node scripts/build-rules.mjs                                      # uses ../tirules-search if it exists
 ```
+
+The drawer's "Rules from …" credit links to that folder's `origin` remote, so building from a fork credits the fork.
 
 This rewrites `extension/rules.json`. Then reload the extension.
 
