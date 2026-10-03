@@ -34,16 +34,24 @@ After changing any extension files, click the reload icon on the extension's car
 
 The Safari version is the same `extension/` code wrapped in a small Mac app (Xcode project in `safari/`).
 
+Requires Xcode. For a build Safari keeps enabled, sign it with your Apple ID (free):
+
+1. **Xcode → Settings → Accounts →** add your Apple ID, then **Manage Certificates → + → Apple Development**.
+2. Put your Team ID in `safari/team-id`. It's the 10-character code in parentheses at the end of the certificate's *subject* line:
+   `security find-certificate -c "Apple Development" -p | openssl x509 -noout -subject` (the `OU=` value).
+   The file is gitignored, so your Team ID never gets committed.
+3. Build and install:
+
 ```bash
 sh scripts/build-safari.sh    # builds, installs to ~/Applications, and launches the app once
 ```
 
-Then in Safari:
+4. In Safari: **Settings → Extensions →** check **TI4 Rules Drawer**.
+5. On ti-assistant.com, click the extension's toolbar icon and choose **Always Allow on This Website**.
 
-1. **Settings → Advanced →** check **Show features for web developers** (adds the Develop menu).
-2. **Develop → Allow Unsigned Extensions** (asks for your password). Safari turns this off each time it quits.
-3. **Settings → Extensions →** check **TI4 Rules Drawer**.
-4. On ti-assistant.com, click the extension's toolbar icon and choose **Always Allow on This Website**.
+Without `safari/team-id` the build is unsigned. It still works if you turn on **Develop → Allow Unsigned Extensions** (enable the Develop menu under **Settings → Advanced**), but Safari turns that off every time it quits.
+
+If `security find-identity -v -p codesigning` reports 0 valid identities, your keychain is missing Apple's current intermediate certificate. Install [AppleWWDRCAG3.cer](https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer) (double-click it).
 
 After changing anything in `extension/`, re-run `scripts/build-safari.sh`, since Safari bundles a copy at build time.
 
